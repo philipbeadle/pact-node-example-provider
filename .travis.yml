@@ -7,4 +7,4 @@ cache:
   - node_modules
 script:
 - npm install
-- mocha app/client/spec/PostServiceClient.spec.js
+- node app/service/spec/PostService.spec.js
