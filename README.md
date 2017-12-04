@@ -11,17 +11,13 @@ npm install
 ```
 
 ## Usage
-Run consumer-side tests
-
-```
-mocha app/client/spec/PostServiceClient.spec.js
-```
-
 Run provider-side tests
 
 ```
 node app/service/spec/PostService.spec.js
 ```
+
+Run Docker for local Pact
 
 docker run --name pactbroker-db -e POSTGRES_PASSWORD=ThePostgresPassword -e POSTGRES_USER=admin -e PGDATA=/Users/philipbeadle/Projects/elabor8/YOW/pact-data/pgdata -v /Users/philipbeadle/Projects/elabor8/YOW/pact-data:/Users/philipbeadle/Projects/elabor8/YOW/pact-data -d postgres
 
